@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="091504276044781" translatesAutoresizingMaskIntoConstraints="NO" id="5vE-n0-Hqg">
+                                <rect key="frame" x="20" y="15" width="560" height="443"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="443" id="mXa-uh-oSe"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPr-ye-zt3">
+                                <rect key="frame" x="251" y="473" width="99" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Mj9-Xa-dgd"/>
+                                    <constraint firstAttribute="width" constant="99" id="NFN-PV-Dyq"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GOI-kC-OJt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5vE-n0-Hqg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AAU-v2-jS6"/>
+                            <constraint firstItem="PPr-ye-zt3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLL-ed-W6W"/>
+                            <constraint firstItem="5vE-n0-Hqg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="pvW-XK-fwy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PPr-ye-zt3" secondAttribute="bottom" constant="76" id="t7A-tu-HYI"/>
+                            <constraint firstItem="5vE-n0-Hqg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wRg-sN-HqD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="5vE-n0-Hqg" id="ABh-48-kTN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="091504276044781" width="640" height="1136"/>
+    </resources>
+</document>
